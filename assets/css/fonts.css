@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Spaced";
+  src: url("fonts/Spaced-Regular.eot");
+  src: local("Spaced Regular"), local("Spaced-Regular"),
+    url("fonts/Spaced-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Spaced-Regular.woff2") format("woff2"),
+    url("fonts/Spaced-Regular.woff") format("woff"),
+    url("fonts/Spaced-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("fonts/SpaceMono-Regular.eot");
+  src: local("Space Mono Regular"), local("SpaceMono-Regular"),
+    url("fonts/SpaceMono-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/SpaceMono-Regular.woff2") format("woff2"),
+    url("fonts/SpaceMono-Regular.woff") format("woff"),
+    url("fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("fonts/Sora-Regular.eot");
+  src: local("Sora Regular"), local("Sora-Regular"),
+    url("fonts/Sora-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Sora-Regular.woff2") format("woff2"),
+    url("fonts/Sora-Regular.woff") format("woff"),
+    url("fonts/Sora-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.spaced-font {
+  font-family: "Spaced", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.space-mono-font {
+  font-family: "Space Mono", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sora-font {
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-size-12 {
+  font-size: 0.75rem;
+}
+.font-size-14 {
+  font-size: 0.875rem;
+}
+.font-size-16 {
+  font-size: 1rem;
+}
+.font-size-18 {
+  font-size: 1.125rem;
+}
+.font-size-20 {
+  font-size: 1.25rem;
+}
+.font-size-24 {
+  font-size: 1.5rem;
+}
