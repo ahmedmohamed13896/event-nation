@@ -4,29 +4,38 @@ window.onload = function () {
 
 /////////////////
 
-function updateNavbarStyle(navHeight) {
-  const isExpanded = NAV_COLLAPSE.classList.contains("show");
-  if (window.scrollY >= navHeight || isExpanded) {
-    NAV_BAR.classList.add("fadeInBackground");
-  } else {
-    NAV_BAR.classList.remove("fadeInBackground");
-  }
-}
+// function updateNavbarStyle(navHeight) {
+//   const isExpanded = NAV_COLLAPSE.classList.contains("show");
+//   if (window.scrollY >= navHeight || isExpanded) {
+//     NAV_BAR.classList.add("fadeInBackground");
+//   } else {
+//     NAV_BAR.classList.remove("fadeInBackground");
+//   }
+// }
 
-NAV_TOGGLER.addEventListener("click", function (e) {
-  if (e.target.classList.contains("show")) {
-    NAV_BAR.classList.add("fadeInBackground");
-  } else if (window.scrollY < NAV_HEIGHT) {
-    NAV_BAR.classList.add("fadeInBackground");
-  }
-});
+// NAV_TOGGLER.addEventListener("click", function (e) {
+//   if (e.target.classList.contains("show")) {
+//     NAV_BAR.classList.add("fadeInBackground");
+//   } else if (window.scrollY < NAV_HEIGHT) {
+//     NAV_BAR.classList.add("fadeInBackground");
+//   }
+// });
 
 if (SCROLL_DOWN_ICON) {
   SCROLL_DOWN_ICON.addEventListener("click", function () {
-    GALLERY.scrollIntoView({ behavior: "smooth" });
+    scrollToSection(GALLERY);
   });
 }
 
+// scrollToSection
+function scrollToSection(section) {
+  const yOffset = section.offsetTop;
+
+  window.scrollTo({
+    top: yOffset - MAIN_NAV.clientHeight,
+    behavior: "smooth",
+  });
+}
 // Function to change the image
 function changeImage(imgContainer) {
   currentIndex = (currentIndex + 1) % getSelectedImages(imgContainer).length;

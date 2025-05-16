@@ -1,0 +1,20 @@
+.about-page .main-content {
+  padding-top: calc(127px + 10%);
+  padding-bottom: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-page .about-bg {
+  height: 600px;
+  min-height: 75vh;
+  background-image: url(../images/about/about-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-page .gallery .img-icon {
+  width: 400px;
+  max-width: 80%;
+}
