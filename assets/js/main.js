@@ -2,24 +2,18 @@ window.onload = function () {
   LOADER.style.display = "none";
 };
 
-/////////////////
+function updateNavbarStyle(navHeight) {
+  const isExpanded = NAV_COLLAPSE.classList.contains("show");
+  if (window.scrollY >= navHeight || isExpanded) {
+    MAIN_NAV.classList.add("background-dark");
+  } else {
+    MAIN_NAV.classList.remove("background-dark");
+  }
+}
 
-// function updateNavbarStyle(navHeight) {
-//   const isExpanded = NAV_COLLAPSE.classList.contains("show");
-//   if (window.scrollY >= navHeight || isExpanded) {
-//     NAV_BAR.classList.add("fadeInBackground");
-//   } else {
-//     NAV_BAR.classList.remove("fadeInBackground");
-//   }
-// }
-
-// NAV_TOGGLER.addEventListener("click", function (e) {
-//   if (e.target.classList.contains("show")) {
-//     NAV_BAR.classList.add("fadeInBackground");
-//   } else if (window.scrollY < NAV_HEIGHT) {
-//     NAV_BAR.classList.add("fadeInBackground");
-//   }
-// });
+document.addEventListener("scroll", function () {
+  updateNavbarStyle(NAV_HEIGHT);
+});
 
 if (SCROLL_DOWN_ICON) {
   SCROLL_DOWN_ICON.addEventListener("click", function () {

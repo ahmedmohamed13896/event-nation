@@ -18,3 +18,14 @@
   width: 400px;
   max-width: 80%;
 }
+@media screen and (max-width: 992px) {
+  .about-page .about-bg {
+    min-height: auto;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-page .about-bg {
+    height: 250px;
+  }
+}

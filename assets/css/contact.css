@@ -1,0 +1,37 @@
+.contact-page .header-wrapper {
+  background: url(../images/contact-us/map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.contact-page .main-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(
+    58.49% 43.23% at 103% 0%,
+    rgba(0, 127, 255, 0.6) 0%,
+    rgba(0, 8, 31, 0) 100%
+  );
+  background-color: rgba(var(--main-bg), 0.6);
+}
+form label {
+  font-size: 1rem;
+  color: var(--main-color);
+}
+form .form-control {
+  border: 1px solid var(--main-color);
+  color: var(--white);
+  background: transparent;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--main-bg) inset !important; /* Change white to your background color */
+  -webkit-text-fill-color: var(
+    --white
+  ) !important; /* Your desired text color */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent flashing */
+}
