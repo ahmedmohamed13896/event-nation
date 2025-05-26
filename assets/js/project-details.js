@@ -3,13 +3,12 @@ const id = params.get("id");
 const VIDEO = document.getElementById("video");
 const VIDEO_SRC = document.createElement("source");
 
-function createVideoSrc(project){
-    VIDEO_SRC.src = project.video;
-    VIDEO_SRC.setAttribute("src", project.video);
-    VIDEO_SRC.setAttribute("type", "video/mp4");
-    VIDEO.appendChild(VIDEO_SRC);
-    VIDEO.load();
-  
+function createVideoSrc(project) {
+  VIDEO_SRC.src = project.video;
+  VIDEO_SRC.setAttribute("src", project.video);
+  VIDEO_SRC.setAttribute("type", "video/mp4");
+  VIDEO.appendChild(VIDEO_SRC);
+  VIDEO.load();
 }
 
 if (id) {
@@ -32,6 +31,5 @@ if (id) {
   <h6 class="text-uppercase text-gray-md mb-4 m-plus-1p-bold video-title">Description</h6>
   <p class="m-plus-1p-medium">${project.description}</p>
   `;
-  description.innerHTML  = descriptionHTML
-  
+  description.innerHTML = descriptionHTML;
 }

@@ -5,9 +5,9 @@ window.onload = function () {
 function updateNavbarStyle(navHeight) {
   const isExpanded = NAV_COLLAPSE.classList.contains("show");
   if (window.scrollY >= navHeight || isExpanded) {
-    MAIN_NAV.classList.add("background-dark");
+    MAIN_NAV.classList.add("background-dark-70");
   } else {
-    MAIN_NAV.classList.remove("background-dark");
+    MAIN_NAV.classList.remove("background-dark-70");
   }
 }
 
@@ -54,17 +54,19 @@ function stopImageLoop(imgContainer) {
 
 $(".services-list").slick({
   dots: true,
-  infinite: false,
+  infinite: true,
   arrows: false,
   speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 2500,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         dots: true,
       },
     },
@@ -72,7 +74,7 @@ $(".services-list").slick({
       breakpoint: 992,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         dots: true,
       },
     },
@@ -88,4 +90,27 @@ $(".services-list").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
+});
+
+function setEqualHeight() {
+  var maxHeight = 0;
+
+  $(".services-list .slick-slide").each(function () {
+    var $box = $(this).find(".box");
+    $box.css("height", "auto"); // reset height
+    var h = $box.outerHeight();
+    if (h > maxHeight) {
+      maxHeight = h;
+    }
+  });
+
+  $(".services-list .slick-slide .box").css("height", maxHeight + "px");
+}
+
+$(".services-list").on("setPosition", function () {
+  setEqualHeight();
+});
+
+$(window).on("resize", function () {
+  setEqualHeight();
 });
