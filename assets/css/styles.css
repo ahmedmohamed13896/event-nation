@@ -114,6 +114,20 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.clamp-three-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.clamp-four-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .main-btn {
   background: var(--main-color);
@@ -160,6 +174,13 @@ p {
   opacity: 0.5 !important;
 }
 
+.bg-injector {
+  background: url(../images/injector.png);
+  background-position: 90% 0;
+  background-size: calc(15% + 80px);
+  background-repeat: no-repeat;
+}
+
 /* Home page */
 .home-page {
   background-color: var(--background-dark);
@@ -180,7 +201,7 @@ p {
   height: 400px;
   z-index: 0;
   pointer-events: none;
-  top: 65%;
+  top: 40%;
   background: radial-gradient(
       60% 60% at -2% 45%,
       rgb(0 127 255 / 83%) -82%,
@@ -229,12 +250,14 @@ p {
   padding: 1.875rem;
   border-radius: 1rem;
   overflow: hidden;
+  min-height: 23.313rem;
 }
 .box .box-title {
   font-family: "Spaced", sans-serif;
 }
 .box .description {
   font-size: 1rem;
+  line-height: 1.8;
 }
 
 /* loader */
@@ -272,6 +295,17 @@ section.contact-us .logo {
 }
 
 /* Slick Dots */
+.slick-list {
+  overflow: initial;
+}
+/* .slick-track {
+  display: flex;
+  gap: 2rem;
+} */
+.slick-initialized .slick-slide {
+  margin: 1rem;
+}
+
 .slick-dots li button {
   display: inline-flex;
   justify-content: center;
@@ -289,10 +323,6 @@ section.contact-us .logo {
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
   background: var(--secondary-color);
-}
-.slick-next,
-.slick-prev {
-  display: none !important;
 }
 
 @keyframes rotation {

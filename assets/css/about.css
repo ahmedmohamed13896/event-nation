@@ -4,6 +4,21 @@
   max-width: 1200px;
   margin: auto;
 }
+.about-page .main-content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    32% 68% at 100% 22%,
+    rgb(0 127 255 / 74%) -131%,
+    rgba(0, 8, 31, 0) 75%
+  );
+}
 
 .about-page .about-bg {
   height: 600px;

@@ -57,3 +57,8 @@
 .services-page .service-box .box-title {
   font-size: 2.25rem;
 }
+.services-page .service-box .description {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
