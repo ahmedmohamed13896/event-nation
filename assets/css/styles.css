@@ -12,6 +12,9 @@ body {
   min-height: 100vh;
   line-height: 1.3;
 }
+section {
+  overflow: hidden;
+}
 
 /* global styles  */
 .color-main {
