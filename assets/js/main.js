@@ -57,11 +57,19 @@ $(".services-list").slick({
   infinite: true,
   arrows: false,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 2,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2500,
   responsive: [
+    {
+      breakpoint: 3000,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        dots: true,
+      },
+    },
     {
       breakpoint: 1200,
       settings: {
@@ -80,6 +88,14 @@ $(".services-list").slick({
     },
     {
       breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
