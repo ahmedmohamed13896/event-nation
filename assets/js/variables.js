@@ -8,3 +8,7 @@ const NAV_COLLAPSE = document.querySelector(".navbar-collapse");
 const LOADER = document.querySelector(".loader_section");
 const PROJECT_CONTAINERS = document.querySelectorAll(".box-img-wrapper");
 const NAV_HEIGHT = 127;
+const WORK_CONTAINER = document.querySelector(".work-list");
+
+
+

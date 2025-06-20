@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/project-details.css" />
+
+    <!-- Title -->
+    <title>Event Nation</title>
+</head>
+
+<body class="background-dark project-details">
+    <!-- Header -->
+    <header id="main-header" class="header-wrapper mb-5">
+        <!-- Navbar -->
+        <nav id="main_navbar"
+            class="navbar navbar-expand-md navbar-dark navbar-fixed px-sm-5 px-4 navbar-custom w-100 position-fixed"
+            data-aos="fade-down" data-aos-easing="linear">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-wrapper" href="index.html">
+                    <img src="./assets/images/logo.svg" alt="Logo" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link mx-md-3 mx-lg-4 active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link mx-md-3 mx-lg-4" href="./works.html">Works</a>
+                        <a class="nav-link mx-md-3 mx-lg-4" href="./services.html">Services</a>
+                        <a class="nav-link mx-md-3 mx-lg-4" href="./about.html">About</a>
+                        <a class="nav-link mx-md-3 mx-lg-4" href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- project name -->
+        <div class="project-details__name w-100 px-sm-5 px-4">
+            <div class="container-fluid">
+                <h1 class="secTitle spaced-font mb-5" data-aos="zoom-out-right" data-aos-duration="1000"
+                    data-aos-delay="100" data-aos-easing="linear">
+                    Project Name
+                </h1>
+                <div class="d-flex" data-aos="fade-in" data-aos-duration="1000"
+                    data-aos-delay="600" data-aos-easing="linear">
+                    <button class="btn white-btn mx-1 d-flex align-items-center">
+                        <img src="./assets/images/project-details/dark-cube.svg" alt="cube icon" class="pe-2">
+                        filter name</button>
+                    <button class="btn white-btn mx-1 d-flex align-items-center">
+                        <img src="./assets/images/project-details/dark-cube.svg" alt="cube icon" class="pe-2">
+                        filter name</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="description">
+        <div class="container-fluid px-sm-5 px-4">
+            <div class="row">
+                <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                    <h4 class="mb-5">Description</h4>
+                    <p class="description__details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 offset-lg-2 mt-5 mt-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+                    <h4 class="mb-5">our Role</h4>
+                    <div class="d-flex">
+                        <button class="btn dark-btn mx-1 d-flex align-items-center">
+                            <img src="./assets/images/project-details/white-cube.svg" alt="cube icon" class="pe-2">
+                            filter name</button>
+                        <button class="btn dark-btn mx-1 d-flex align-items-center">
+                            <img src="./assets/images/project-details/white-cube.svg" alt="cube icon" class="pe-2">
+                            filter name</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details__photos px-sm-5 px-4">
+        <div class="video-wrap border-shadow" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="linear">
+            <div class="responsive-video">
+                <video controls id="video">
+                </video>
+            </div>
+        </div>
+        <div class="image-grid my-3">
+            <!-- <div class="image-box border-shadow" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                <img src="./assets/images/project-details/frame1.jpg" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box border-shadow" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="linear">
+                <img src="./assets/images/project-details/frame2.jpg" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box border-shadow" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+                <img src="./assets/images/project-details/frame3.png" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box full-width border-shadow" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./assets/images/project-details/frame4.jpg" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box border-shadow" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+                <img src="./assets/images/project-details/frame1.jpg" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box border-shadow" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="linear">
+                <img src="./assets/images/project-details/frame2.jpg" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box border-shadow" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+                <img src="./assets/images/project-details/frame3.png" alt="project" class="img-fluid">
+            </div>
+            <div class="image-box full-width border-shadow" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./assets/images/project-details/header.png" alt="project" class="img-fluid">
+            </div> -->
+        </div>
+
+    </section>
+
+    <section data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="linear">
+        <div class="project-slider">
+            <!-- <div class="project-box left">
+                <img src="./assets/images/project-details/frame1.jpg" alt="Previous Project"
+                    class="project-box__mainImg" />
+                <div class="overlay">
+                    <div class="details">
+                        <h2>Prev.Project</h2>
+                        <h5>project name</h5>
+                        <button class="btn semi-transparent-btn">project type</button>
+                    </div>
+                    <a href="#" class="text-white">
+                        <img src="./assets/images/project-details/ArrowCircleLeft.svg" alt="arrow"
+                            class="img-fluid arrow-img"> Discover
+                    </a>
+                </div>
+            </div> -->
+            <!-- <div class="project-box right">
+                <img src="./assets/images/project-details/frame2.jpg" alt="Next Project" class="project-box__mainImg" />
+                <div class="overlay">
+                    <div class="details">
+                        <h2>Next.Project</h2>
+                        <h5>project name</h5>
+                        <button class="btn semi-transparent-btn">project type</button>
+
+                    </div>
+                       <a href="#" class="text-white text-end">
+                        Discover
+                        <img src="./assets/images/project-details/ArrowCircleRight.svg" alt="arrow"
+                            class="img-fluid arrow-img"> 
+                    </a>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <!-- Contact us -->
+    <section class="contact-us mb-30">
+        <div class="container-fluid px-sm-5 px-4">
+            <div class="row">
+                <div class="col-md-6 py-5">
+                    <div class="mb-5 text-md-start text-center mb-60" data-aos="zoom-in-right" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <p class="color-main font-size-24 mb-3 opacity-50">Email</p>
+                        <a class="color-white font-size-20 space-mono-font underline-none"
+                            href="mailto:eventnation@email.com">eventnation@email.com</a>
+                    </div>
+                    <div class="mb-5 text-md-start text-center mb-60" data-aos="zoom-in-right" data-aos-duration="1000"
+                        data-aos-easing="linear">
+                        <p class="color-main font-size-24 mb-3 opacity-50">Location</p>
+                        <a class="color-white font-size-20 space-mono-font underline-none" href="#">3772, El bsalla, Al
+                            aziziya district,7641 Riadhy, KSA</a>
+                    </div>
+                    <!-- Social Logos -->
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-60"
+                        data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="linear">
+                        <li>
+                            <img class="img-fluid" src="./assets/images/FacebookLogo.svg" alt="FacebookLogo.svg" />
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="./assets/images/InstagramLogo.svg" alt="InstagramLogo.svg" />
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="./assets/images/YoutubeLogo.svg" alt="YoutubeLogo.svg" />
+                        </li>
+                        <li>
+                            <img class="img-fluid" src="./assets/images/BehanceLogo.svg" alt="BehanceLogo.svg" />
+                        </li>
+                    </ul>
+                    <a href="./contact.html"
+                        class="btn main-btn d-flex justify-content-center gap-2 align-items-center mt-5 ms-md-0 mx-auto"
+                        data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="linear"
+                        data-aos-anchor-placement="top-bottom">
+                        <img src="./assets/images/ArrowRight-icon.svg" alt="ArrowRight-icon" />
+                        Contact us
+                    </a>
+                </div>
+                <div class="col-md-6 d-flex flex-column py-5">
+                    <div class="d-flex align-items-center justify-content-center flex-wrap ms-md-auto me-md-0 mx-auto mb-5"
+                        data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+                        <a class="nav-link font-size-16 color-white mx-md-3 mx-lg-4" aria-current="page"
+                            href="./index.html">Home</a>
+                        <a class="nav-link font-size-16 color-white mx-md-3 mx-lg-4" href="./works.html">Works</a>
+                        <a class="nav-link font-size-16 color-white mx-md-3 mx-lg-4" href="./services.html">Services</a>
+                        <a class="nav-link font-size-16 color-white mx-md-3 mx-lg-4" href="./about.html">About</a>
+                        <a class="nav-link font-size-16 color-white mx-md-3 mx-lg-4" href="./contact.html">Contact
+                            Us</a>
+                    </div>
+                    <img src="./assets/images/logo.svg" alt="Logo" class="logo img-fluid mx-auto d-block mt-auto"
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-anchor-placement="top-bottom">
+        <div class="container-fluid px-sm-5 px-4 py-5">
+            <p class="font-size-14 font-monospace">
+                © 2025 eventnation, All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Loader -->
+    <section id="loader_section" class="loader_section">
+        <img class="img-fluid mb-3" src="./assets/images/logo.svg" alt="logo" />
+        <div class="loader"></div>
+    </section>
+
+    <!-- Popper and Bootstrap JS -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- Jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery-migrate.min.js"></script>
+    <!-- Slick -->
+    <script src="./assets/js/slick.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: false,
+            anchorPlacement: "top-bottom",
+        });
+        </script>
+    <script src="./assets/js/static-data.js"></script>
+    <script src="./assets/js/variables.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/project-details.js"></script>
+
+</body>
+
+</html>

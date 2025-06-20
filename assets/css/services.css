@@ -1,9 +1,9 @@
 /* services-page */
 .services-page .main-content {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   position: relative;
 }
 .services-page .main-content::before {
@@ -65,4 +65,39 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.services-page .filtration-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
+.services-page .filtration-options .btn {
+  height: 100%;
+  white-space: nowrap;
+}
+
+.services-page .filtration-options .dark-btn.active{
+  background: var(--main-color);
+  box-shadow: 0px 4px 40px -10px var(--secondary-color);
+  color: var(--white);
+}
+.services-page .filtration-options > div {
+  gap: 10px;
+}
+
+.services-page .box_img-wrap{
+  overflow: hidden;
+  width: 100%;
+}
+
+.services-page .box_img-wrap:hover img{
+transform: scale(1.2);
+}
+
+.services-page .box_img-wrap img{
+  height: 30rem;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
