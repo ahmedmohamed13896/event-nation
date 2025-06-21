@@ -41,59 +41,92 @@
   </head>
 
   <body class="background-dark home-page">
-    <!-- Header -->
-    <header id="main-header" class="header-wrapper mb-5">
-      <!-- Navbar -->
-      <nav
-        id="main_navbar"
-        class="navbar navbar-expand-md navbar-dark navbar-fixed px-sm-5 px-4 navbar-custom w-100 position-fixed"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand logo-wrapper" href="index.html">
-            <img src="./assets/images/logo.svg" alt="Logo" class="img-fluid" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a
-                class="nav-link mx-md-3 mx-lg-4 active"
-                aria-current="page"
-                href="./index.html"
-                >Home</a
-              >
-              <a class="nav-link mx-md-3 mx-lg-4" href="./works.html">Works</a>
-              <a class="nav-link mx-md-3 mx-lg-4" href="./services.html"
-                >Services</a
-              >
-              <a class="nav-link mx-md-3 mx-lg-4" href="./about.html">About</a>
-              <a class="nav-link mx-md-3 mx-lg-4" href="./contact.html"
-                >Contact Us</a
-              >
-            </div>
+    <!-- Navbar -->
+    <nav
+      id="main_navbar"
+      class="navbar navbar-expand-md navbar-dark navbar-fixed px-sm-5 px-4 navbar-custom w-100 position-fixed"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand logo-wrapper" href="index.html">
+          <img src="./assets/images/logo.svg" alt="Logo" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link mx-md-3 mx-lg-4 active"
+              aria-current="page"
+              href="./index.html"
+              >Home</a
+            >
+            <a class="nav-link mx-md-3 mx-lg-4" href="./works.html">Works</a>
+            <a class="nav-link mx-md-3 mx-lg-4" href="./services.html"
+              >Services</a
+            >
+            <a class="nav-link mx-md-3 mx-lg-4" href="./about.html">About</a>
+            <a class="nav-link mx-md-3 mx-lg-4" href="./contact.html"
+              >Contact Us</a
+            >
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="main-header" class="header-wrapper shadow-after">
       <!-- Home content -->
-         <div class="video-wrap">
-            <video id="home_video" muted autoplay loop playsinline preload="auto" poster="./assets/images/main-bg.jpg">
-                <source src="./assets/videos/hero for event nation 2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+      <div class="video-wrap">
+        <video
+          id="home_video"
+          muted
+          autoplay
+          loop
+          playsinline
+          preload="auto"
+          poster="./assets/images/main-bg.jpg"
+        >
+          <source
+            src="./assets/videos/hero for event nation 2.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div
+          class="scroll-down pulse-animation d-flex align-items-center flex-column gap-2 mx-auto"
+        >
+          <span
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            data-aos-easing="linear"
+            data-aos-anchor-placement="top-bottom"
+            >Scroll Down</span
+          >
+          <img
+            class="img-fluid"
+            src="./assets/images/ArrowCircleDown-icon.svg"
+            alt="ArrowCircleDown-icon.svg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            data-aos-easing="linear"
+            data-aos-anchor-placement="top-bottom"
+          />
         </div>
-      <div class="home-content w-100 px-sm-5 px-4">
-        <!-- <div class="container-fluid">
+      </div>
+      <!-- <div class="home-content w-100 px-sm-5 px-4">
+        <div class="container-fluid">
           <h1
             class="secTitle spaced-font"
             data-aos="zoom-out-right"
@@ -123,7 +156,7 @@
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
-          </p> -->
+          </p>
           <div
             class="scroll-down pulse-animation d-flex align-items-center flex-column gap-2 mx-auto"
           >
@@ -147,7 +180,7 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <!-- Gallery -->
@@ -164,6 +197,7 @@
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-easing="linear"
+              loading="lazy"
             />
           </div>
           <div class="col-md-6">
@@ -484,6 +518,7 @@
                 src="./assets/images/project-bg.jpg"
                 alt="Cube-icon"
                 class="img-fluid w-100"
+                loading="lazy"
               />
               <div class="p-3 text-center pb-5">
                 <h3
@@ -524,6 +559,7 @@
                 src="./assets/images/project-bg.jpg"
                 alt="Cube-icon"
                 class="img-fluid w-100"
+                loading="lazy"
               />
               <div class="p-3 text-center pb-5">
                 <h3
@@ -564,6 +600,7 @@
                 src="./assets/images/project-bg.jpg"
                 alt="Cube-icon"
                 class="img-fluid w-100"
+                loading="lazy"
               />
               <div class="p-3 text-center pb-5">
                 <h3
@@ -604,6 +641,7 @@
                 src="./assets/images/project-bg.jpg"
                 alt="Cube-icon"
                 class="img-fluid w-100"
+                loading="lazy"
               />
               <div class="p-3 text-center pb-5">
                 <h3

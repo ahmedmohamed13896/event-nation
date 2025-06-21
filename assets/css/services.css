@@ -1,6 +1,6 @@
 /* services-page */
 .services-page .main-content {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -38,7 +38,7 @@
 
 .services-page .service-box img {
   width: 350px;
-  max-width: 80%;
+  max-width: 50%;
   display: block;
   margin: 0 auto;
 }
@@ -68,9 +68,7 @@
 }
 
 .services-page .filtration-options {
-  display: flex;
-  justify-content: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .services-page .filtration-options .btn {
@@ -78,7 +76,7 @@
   white-space: nowrap;
 }
 
-.services-page .filtration-options .dark-btn.active{
+.services-page .filtration-options .dark-btn.active {
   background: var(--main-color);
   box-shadow: 0px 4px 40px -10px var(--secondary-color);
   color: var(--white);
@@ -87,17 +85,24 @@
   gap: 10px;
 }
 
-.services-page .box_img-wrap{
+.services-page .box_img-wrap {
   overflow: hidden;
   width: 100%;
 }
 
-.services-page .box_img-wrap:hover img{
-transform: scale(1.2);
+.services-page .box_img-wrap:hover img {
+  transform: scale(1.2);
 }
 
-.services-page .box_img-wrap img{
+.services-page .box_img-wrap img {
   height: 30rem;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .services-page .main-content {
+    min-height: auto;
+    padding-top: 180px;
+  }
 }

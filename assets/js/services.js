@@ -27,10 +27,10 @@ FILTER_BTNS.forEach((btn) => {
 function renderFilteredProjects(projects) {
   WORK_CONTAINER.innerHTML = "";
   projects.map((project) => {
-    const projectList = `   <div class="col-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
+    const projectList = `<div class="col-md-6" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-easing="linear">
           <div class="box d-flex flex-column gap-4 align-items-center mb-5 p-0">
             <div class="box_img-wrap">
-              <img src="${project.imgSrc}" alt="Cube-icon" class="img-fluid w-100" />
+              <img src="${project.imgSrc}" alt="Cube-icon" class="img-fluid w-100" loading="lazy" />
             </div>
             <div class="p-3 text-center pb-5">
               <h3 class="box-title text-center font-size-24 line-height-100 mb-3">
@@ -40,7 +40,7 @@ function renderFilteredProjects(projects) {
               ${project.description}
               </p>
               <a href="${project.link}" class="d-flex align-items-center justify-content-center color-main gap-2 mb-3">
-                <img src="./assets/images/Arrow-right-dark.svg" alt="Arrow-right-dark.svg" />
+                <img src="./assets/images/Arrow-right-dark.svg" alt="Arrow-right-dark.svg" loading="lazy" />
                 View full project
               </a>
             </div>
@@ -63,5 +63,3 @@ function onFilterClick(btn) {
     filterTerm !== "all work" ? workItems[filterTerm] : allWorksItems;
   renderFilteredProjects(filteredProjects);
 }
-
-
