@@ -49,16 +49,23 @@ if (id) {
       imageList,
       fullDescription,
       description: shortDesc,
+      name,
     } = project;
     const projectsSlider = document.querySelector(".project-slider");
     const container = document.querySelector(".image-grid");
     const description = document.querySelector(".description__details");
+    const project_name = document.querySelector("#project_name");
 
     // Render Prev Project
     if (prevProjectId && projectsSlider) {
       const prevProject = allWorksItems.find((pro) => pro.id == prevProjectId);
       if (prevProject) {
-        const prevHTML = renderProjectBox(prevProject, "left", nextProjectId, prevProjectId);
+        const prevHTML = renderProjectBox(
+          prevProject,
+          "left",
+          nextProjectId,
+          prevProjectId
+        );
         projectsSlider.insertAdjacentHTML("beforeend", prevHTML);
       }
     }
@@ -67,7 +74,12 @@ if (id) {
     if (nextProjectId && projectsSlider) {
       const nextProject = allWorksItems.find((pro) => pro.id == nextProjectId);
       if (nextProject) {
-        const nextHTML = renderProjectBox(nextProject, "right", nextProjectId, prevProjectId);
+        const nextHTML = renderProjectBox(
+          nextProject,
+          "right",
+          nextProjectId,
+          prevProjectId
+        );
         projectsSlider.insertAdjacentHTML("beforeend", nextHTML);
       }
     }
@@ -81,6 +93,6 @@ if (id) {
       container.insertAdjacentHTML("beforeend", newProjectHTML);
     });
     description.innerHTML = fullDescription ?? shortDesc;
+    project_name.innerHTML = name;
   }
 }
-

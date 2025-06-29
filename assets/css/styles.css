@@ -357,6 +357,7 @@ p {
   text-decoration: none;
   cursor: pointer;
   background: var(--card-bg);
+  height: calc(100% - 3rem);
 }
 .box .icon {
   max-width: 65px;

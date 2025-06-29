@@ -1,5 +1,24 @@
 window.onload = function () {
   LOADER.style.display = "none";
+  const video = document.getElementById("home_video");
+  if (video) {
+    video.setAttribute("preload", "auto");
+    video.load();
+  }
+
+  // Video Lazy Loading
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        video.src = video.dataset.src; // Lazy load source
+        observer.unobserve(video);
+      }
+    });
+  });
+  document.querySelectorAll("video[data-src]").forEach((video) => {
+    observer.observe(video);
+  });
 };
 
 function updateNavbarStyle(navHeight) {
@@ -130,3 +149,58 @@ $(".services-list").on("setPosition", function () {
 $(window).on("resize", function () {
   setEqualHeight();
 });
+
+function loadProjects() {
+  // all project without filtration key
+  if (workItems) {
+    const allWorksItems = Object.values(workItems).reduce((acc, curr) => {
+      return acc.concat(curr);
+    }, []);
+
+    allWorksItems?.forEach((project) => {
+      const projectHtml = `<div
+                  class="col-md-6 col-12"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-easing="linear"
+                >
+                  <div
+                    class="box d-flex flex-column gap-4 align-items-center mb-5 p-0"
+                  >
+                    <img
+                      src="./assets/images/project-bg.jpg"
+                      alt="Cube-icon"
+                      class="img-fluid w-100"
+                      loading="lazy"
+                    />
+                    <div class="p-3 text-center pb-5">
+                      <h3
+                        class="box-title text-center font-size-24 line-height-100 mb-3"
+                      >
+                        ${project.name}
+                      </h3>
+                      <p
+                        class="description space-mono-font clamp-four-lines mb-3 text-center clamp-two-lines"
+                      >
+                        ${project.fullDescription}
+                      </p>
+                      <a
+                        href="./project-details.html?id=${project.id}"
+                        class="d-flex align-items-center justify-content-center color-main gap-2 mb-3"
+                      >
+                        <img
+                          src="./assets/images/Arrow-right-dark.svg"
+                          alt="Arrow-right-dark.svg"
+                        />
+                        View full project
+                      </a>
+                    </div>
+                  </div>
+                </div>`;
+
+      WORK_CONTAINER?.insertAdjacentHTML("beforeend", projectHtml);
+    });
+  }
+}
+
+loadProjects();
