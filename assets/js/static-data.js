@@ -32,7 +32,7 @@ const workItems = {
       imgSrc: "./assets/images/project-details/frame2.jpg",
       description: "Internal Auditors Authority 2025",
       video:
-        "./assets/images/project-details/Internal Auditors Authority 2025/الاتحاد العربي .mp4",
+        "./assets/images/project-details/Internal Auditors Authority 2025/الاتحاد العربي.mp4",
       imageList: [
         "./assets/images/project-details/Internal Auditors Authority 2025/photo/MOH06540.jpg",
         "./assets/images/project-details/Internal Auditors Authority 2025/photo/MOH06542.jpg",
