@@ -3,7 +3,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
 }
+
+.contact-page .header-wrapper::before {
+  position: absolute;
+  content: "";
+  background-color: #00081f85;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .contact-page .main-content {
   min-height: 100vh;
   display: flex;

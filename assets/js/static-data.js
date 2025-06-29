@@ -7,7 +7,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}1`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "An international conference on emerging technologies.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -29,7 +29,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}2`,
       imgSrc: "./assets/images/project-details/frame2.jpg",
       description: "Annual forum bringing together global leaders.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -53,7 +53,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}3`,
       imgSrc: "./assets/images/project-details/frame3.png",
       description: "A showcase of modern and contemporary art.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -75,7 +75,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}4`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "Explore the latest innovations in tech hardware.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -99,7 +99,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}5`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "Dynamic lighting for concerts and live events.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -121,7 +121,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}6`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "Soft lighting setup for exhibitions and decor.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -145,7 +145,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}7`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "3D projection on a historical landmark.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -167,7 +167,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}8`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "Immersive 3D mapping visuals for a tech launch.",
-            video: "",
+            video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -191,7 +191,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}9`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "Massive LED display for event backdrops.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
@@ -213,7 +213,7 @@ const workItems = {
       link: `${PROJECT_PAGE_URL}10`,
       imgSrc: "./assets/images/project-bg.jpg",
       description: "Touch-enabled digital kiosks for product showcases.",
-      video: "",
+      video: "./assets/videos/kendy.mp4",
       imageList: [
         "./assets/images/project-details/frame1.jpg",
         "./assets/images/project-details/frame2.jpg",
