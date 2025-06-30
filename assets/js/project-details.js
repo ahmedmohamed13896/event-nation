@@ -86,7 +86,7 @@ if (id) {
     createVideoSrc(project);
     imageList?.map((img, index) => {
       const newProjectHTML = `
-      <div class="image-box border-shadow ${animationOptions[index].className}" data-aos="${animationOptions[index].type}" data-aos-delay="${animationOptions[index].delay}"  data-aos-duration="1000" data-aos-easing="linear">
+      <div class="image-box border-shadow ${animationOptions[index]?.className}" data-aos="${animationOptions[index]?.type}" data-aos-delay="${animationOptions[index]?.delay}"  data-aos-duration="1000" data-aos-easing="linear">
                   <img src="${img}" alt="project" class="img-fluid">
               </div>
               `;
