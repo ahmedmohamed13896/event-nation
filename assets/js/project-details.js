@@ -2,6 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const VIDEO = document.getElementById("video");
 const VIDEO_SRC = document.createElement("source");
+const PROJECT_FILTER_BTNS = document.querySelectorAll(".filter-btn");
 
 function createVideoSrc(project) {
   VIDEO_SRC.src = project.video;
@@ -50,11 +51,16 @@ if (id) {
       fullDescription,
       description: shortDesc,
       name,
+      type
     } = project;
     const projectsSlider = document.querySelector(".project-slider");
     const container = document.querySelector(".image-grid");
     const description = document.querySelector(".description__details");
     const project_name = document.querySelector("#project_name");
+  
+    PROJECT_FILTER_BTNS.forEach((btn)=>{
+      btn.lastChild.textContent = type      
+    })
 
     // Render Prev Project
     if (prevProjectId && projectsSlider) {

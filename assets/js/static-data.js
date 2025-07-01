@@ -64,7 +64,10 @@ const workItems = {
       type: "conference",
       prevProjectId: 2,
       nextProjectId: 4,
-      fullDescription: `Designing and implementing smart and technical booths, managing and installing the booths with the best possible practices, and paying attention to the smallest details to appear in a manner befitting the event.`,
+      fullDescription: `The Ministry of Investment booth was designed and implemented for the 2025 International LEAP Conference in Riyadh, including the installation of integrated systems with display and interaction screens for showcasing the Ministry's content and initiatives.
+      The booth also included a fully equipped meeting hall for the Minister and showcased the Ministry's efforts and services.
+      The project emphasized presenting the Ministry's services and initiatives in a distinguished manner.
+      It achieved great reception and interaction, combining technology and creativity.`,
     },
   ],
   exhibition: [
@@ -85,7 +88,7 @@ const workItems = {
       type: "exhibition",
       prevProjectId: 3,
       nextProjectId: 5,
-      fullDescription: `Designing and implementing smart and technical booths, managing and installing the booths with the best possible practices, and paying attention to the smallest details to appear in a manner befitting the event.`,
+      fullDescription: `The Local Content Award project was implemented through full event production, filming, and promotional content management.`,
     },
   ],
   lights: [
@@ -106,7 +109,7 @@ const workItems = {
       type: "lights",
       prevProjectId: 4,
       nextProjectId: 6,
-      fullDescription: `we attract our clients through new technology in light that improves the visual experience. As we manage your live event as a timecoded queue, Which improves the timing for each scene.`,
+      fullDescription: `The National Day project was implemented at Al-Kindi Square in the Diplomatic Quarter with full event production and management.`,
     },
   ],
   "3d mapping": [
@@ -155,7 +158,7 @@ const workItems = {
       type: "screens",
       prevProjectId: 6,
       nextProjectId: 8,
-      fullDescription: `We offer all types of led screens transparent P3, P2, and P1 curves, 90 degrees, flex, and floor with the highest resolution and the newest media server for output content.`,
+      fullDescription: `The Akwan Festival project was executed on the beach of Jazan City under the Royal Commission with full design and event production.`,
     },
   ],
 };

@@ -153,11 +153,8 @@ $(window).on("resize", function () {
 function loadProjects() {
   // all project without filtration key
   if (workItems) {
-    const allWorksItems = Object.values(workItems).reduce((acc, curr) => {
-      return acc.concat(curr);
-    }, []);
-
-    allWorksItems?.forEach((project) => {
+    const firstFourProjects = allWorksItems.slice(0, 4);
+    firstFourProjects?.forEach((project) => {
       const projectHtml = `<div
                   class="col-md-6 col-12"
                   data-aos="zoom-in"
@@ -168,7 +165,7 @@ function loadProjects() {
                     class="box d-flex flex-column gap-4 align-items-center mb-5 p-0"
                   >
                     <img
-                      src="./assets/images/project-bg.jpg"
+                      src="${project.imgSrc}"
                       alt="Cube-icon"
                       class="img-fluid w-100"
                       loading="lazy"
